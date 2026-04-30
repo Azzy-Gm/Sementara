@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- Ini adalah halaman utama blog pribadi -->
+<!-- File: blog_nama.html | Dibuat untuk tugas web statis -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman Utama</title>
+  <style>
+    html, body { scroll-behavior: smooth; }
+    .gpy {
+        transition: 0.3s;
+    }
+    .gpy:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(255, 0, 0, 10)
+    }
+  </style>
+</head>
+
+<!-- bgcolor digunakan untuk memberikan warna latar belakang pada halaman -->
+<body bgcolor="black">
+
+<!-- ============================================================ -->
+<!-- TABEL LAYOUT UTAMA: Seluruh halaman dibungkus dalam 1 tabel  -->
+<!-- border="0" agar garis tabel tidak terlihat dari luar         -->
+<!-- ============================================================ -->
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <!-- =========== BARIS 1: HEADER =========== -->
+  <tr>
+    <td colspan="2" bgcolor="grey" align="center">
+      <!-- h1 adalah judul utama halaman, paling besar secara hierarki -->
+      <h1><font color="#5D2E0C" face="Georgia">Azzy Gm Blog</font></h1>
+      
+      <a href="https://gopay.co.id/app/scanqr?deeplink_source=request_money" target="_blank">
+        <img class="gpy" src="img/Gopy.png" alt="Lagi BU" width="10%" style="border: 4px solid brown; border-radius: 4px;">
+      </a>
+
+      <p><a href="#tentang" style="cursor: pointer; text-decoration: none; color: #5D2E0C;">Halaman Utama</a></p>
+    </td>
+  </tr>
+
+  <!-- =========== BARIS 2: MENU NAVIGASI =========== -->
+  <!-- Menu navigasi menggunakan link relatif antar halaman -->
+  <tr>
+    <td colspan="2" bgcolor="black" align="center">
+      <table width="100%" border="2">
+        <tr>
+          <!-- Link relatif ke halaman utama (halaman ini sendiri) -->
+          <td align="center" width="33%">
+            <b><font color="#FFFFFF" face="Arial">
+              <a href="#tentang" style="color:#ffffff; text-decoration:none;">
+                Home <img src="img/Dance.gif" alt="Home" width="50" style="vertical-align: middle;"> 
+              </a>
+            </font></b>
+          </td>
+
+          <!-- Link relatif ke halaman galeri -->
+          <td align="center" width="33%">
+            <b><font color="#FFFFFF" face="Arial">
+              <a href="Galeri.html" target="_blank" style="color:#FFFFFF; text-decoration:none;">
+                Galeri <img src="img/Dance.gif" alt="Galeri" width="50" style="vertical-align: middle;"> 
+              </a>
+            </font></b>
+          </td>
+          <!-- Link relatif ke halaman hobi -->
+          <td align="center" width="33%">
+            <b><font color="#FFFFFF" face="Arial">
+              <a href="Hobi.html" target="_blank" style="color:#FFFFFF; text-decoration:none;">
+                Hobi <img src="img/Dance.gif" alt="Hobi" width="50" style="vertical-align: middle;"> 
+              </a>
+            </font></b>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- =========== BARIS 3: KONTEN UTAMA (2 kolom) =========== -->
+  <tr valign="top">
+  
+
+    <!-- KOLOM KIRI: Foto + Data Singkat -->
+    <td width="250" bgcolor="lightgray" align="center">
+      <!-- Anchor link: id="tentang" -->
+      <a id="tentang"></a>
+
+      <br>
+      <!-- img digunakan untuk menampilkan gambar; alt adalah teks alternatif jika gambar gagal tampil -->
+      <!-- Gambar dari folder lokal (images/) -->
+      <img src="img/ah.jpg"
+           alt=""
+           width="180"
+           style="border: 4px solid brown; border-radius: 4px;">
+
+      <br><br>
+      <font face="Georgia" size="4" color="#5D2E0C"><b>Azzami Kurnia Aribah</b></font><br>
+      <font face="Arial" size="2" color="#8B4513">24411003</font>
+      <br><br>
+
+      <!-- Garis pemisah antar seksi konten -->
+      <hr color="#D2691E" width="80%">
+
+      <!-- Menu kiri menggunakan tabel kecil -->
+      <table border="" cellpadding="28" cellspacing="0" width="90%" bordercolor="red" style="letter-spacing: 1.2px;">
+        <tr bgcolor="orange">
+          <th colspan="2"><font color="black" face="Arial" size="2">Menu</font></th>
+        </tr>
+        <tr bgcolor="grey">
+          <td colspan="2" align="center"><font size="2" face="Arial"><a href="#tentang" style="color:#000000; text-decoration:none;">Home</a></font></td>
+          <!-- <td><font size="2" face="Arial"></font>tes</td> -->
+        </tr>
+        <tr bgcolor="lightgray">
+          <td colspan="2" align="center"><font size="2" face="Arial"><a href="Galeri.html" target="_blank" style="color:#000000; text-decoration:none;">Galeri</a></font></td>
+          <!-- <td><font size="2" face="Arial"></font>tes</td> -->
+        </tr>
+        <tr bgcolor="grey">
+          <td colspan="2" align="center"><font size="2" face="Arial"><a href="Hobi.html" target="_blank" style="color:#000000; text-decoration:none;">Hobi</a></font></td>
+          <!-- <td><font size="2" face="Arial"></font>tes</td> -->
+        </tr>
+      </table>
+
+      <br>
+      <hr color="#D2691E" width="80%">
+
+      <!-- Absolute link ke media sosial -->
+      <font face="Arial" size="2">
+        <a href="https://web.facebook.com/KingGogeta09" target="_blank" style="text-decoration: none;">
+          <img src="img/facebook.gif" alt="Facebook" width="20" style="vertical-align: middle; cursor: pointer;">
+        Go To Facebook</a>
+      </font>
+      <br><br>
+
+    </td>
+
+    <!-- KOLOM KANAN: Konten Utama Profil -->
+    <td bgcolor="lightgray">
+
+      <table width="100%" border="1" cellpadding="15">
+        <tr>
+          <td>
+
+            <!-- ======= BAGIAN: Profile ======= -->
+            <h2><font color="#5D2E0C" face="Georgia">Azzy Gm Blog</font></h2>
+            <hr color="#D2691E">
+
+            <!-- Deskripsi diri menggunakan tag p -->
+            <p><font face="Arial" size="3" color="#5D2E0C">
+            <b>Selamat Datang</b></p></font>
+
+            <p style="font-size: 0.9em;"><font face="Arial">Deskripsi singkat: 
+              <p>Azzami Kurnia Aribah seorang Mahasigma Prodi Sistem Informasi Semester 4. Mulai belajar membuat web dari SMK kelas 3.</p>
+              <p>Berharap dapat berkarier sebagai Web Development, sekarang saya sedang belajar menggunakan javascript, PHP dan frameworknya.</p>
+            </font></p>
+
+            <!-- Kutipan favorit menggunakan blockquote -->
+            <!-- blockquote digunakan untuk menampilkan kutipan/quote -->
+             <!-- Contoh tag pre untuk menampilkan teks dengan format tetap -->
+            <blockquote>
+              <pre>
+              <font face="Georgia" size="3" color="#5D2E0C">
+                <i>"We shall never deny a guest, even the most ridiculous request"</i>
+              </font>
+              <font face="Arial" size="2" color="#8B4513">— Krusty Tower Moto</font><br>
+            <img src="img/Krusty.png" alt="KrustyMoto" width="250" style="border: 4px solid brown; border-radius: 4px;">
+            </pre>
+            </blockquote>
+
+            <!-- Garis pemisah antar seksi -->
+            <hr color="#D2691E">
+
+            <!-- TABEL MENU KIRI -->
+            <!-- table digunakan untuk menampilkan data diri -->
+            <h2><font color="#8B4513" face="Georgia">Data Diri</font></h2>
+
+            <table border="1" cellpadding="8" cellspacing="0" width="95%" bordercolor="red" style="letter-spacing: 1.2px;">
+              <!-- th = table header, tr = table row, td = table data -->
+              <tr>
+                <th width="100%" colspan="2" bgcolor="orange"><font color="black" face="Arial">Identitas</font></th>
+              </tr>
+              <tr>
+                <td><font face="Arial" size="2"><b>Nama</b></font></td>
+                <td><font face="Arial" size="2">Azzy Gm</font></td>
+              </tr>
+              <tr bgcolor="grey">
+                <td><font face="Arial" size="2"><b>Umur</b></font></td>
+                <td><font face="Arial" size="2">20 tahun</font></td>
+              </tr>
+              <tr>
+                <td><font face="Arial" size="2"><b>Status</b></font></td>
+                <td><font face="Arial" size="2">Mahasigma</font></td>
+              </tr>
+              <tr bgcolor="grey">
+                <td><font face="Arial" size="2"><b>Prodi</b></font></td>
+                <td><font face="Arial" size="2">Sistem Informasi</font></td>
+              </tr>
+              <tr>
+                <td><font face="Arial" size="2"><b>Nomor Identitas</b></font></td>
+                <td><font face="Arial" size="2">24411003</font></td>
+              </tr>
+            </table>
+
+            <br>
+            <hr color="#D2691E">
+
+            <!-- Tabel Sosmed -->
+            <h2><font color="#8B4513" face="Georgia">Sosial Media</font></h2>
+
+            
+            <table border="1" cellpadding="8" cellspacing="0" width="95%" bordercolor="red" style="letter-spacing: 1.2px;">
+              <tr bgcolor="orange">
+                <th><font color="black" face="Arial">Nama</font></th>
+                <th><font color="black" face="Arial">Gambar</font></th>
+                <th><font color="black" face="Arial">Link</font></th>
+              </tr>
+              
+              <tr bgcolor="grey">
+                <td align="center"><font face="Arial" size="2"><b>Facebook</b></font></td>
+                <td align="center"><a href="https://www.facebook.com" target="_blank"><img class="gpy" src="img/facebook.svg" alt="Facebook" width="50" height="50"></a></td>
+                <td><a href="https://www.facebook.com" target="_blank"><font face="Arial" size="2">https://www.facebook.com</font></a></td>
+              </tr>
+
+              <tr bgcolor="#FFF3E0">
+                <td align="center"><font face="Arial" size="2"><b>Instagram</b></font></td>
+                <td align="center"><a href="https://www.instagram.com" target="_blank"><img class="gpy" src="img/instagram.svg" alt="Instagram" width="50" height="50"></a></td>
+                <td><a href="https://www.instagram.com" target="_blank"><font face="Arial" size="2">https://www.instagram.com</font></a></td>
+              </tr>
+              <tr bgcolor="grey">
+                <td align="center"><font face="Arial" size="2"><b>GitHub</b></font></td>
+                <td align="center"><a href="https://azzy-gm.github.io/Tugas--Kuliah/ke1%20copy%202.html" target="_blank"><img class="gpy" src="img/git.svg" alt="GitHub" width="50" height="50"></a></td>
+                <td><a href="https://azzy-gm.github.io/Tugas--Kuliah/ke1%20copy%202.html" target="_blank"><font face="Arial" size="2">https://azzy-gm.github.io/Tugas--Kuliah/ke1%20copy%202.html</font></a></td>
+              </tr>
+            </table>
+
+            <br>
+            <!-- Anchor link internal dan relatif -->
+            <tr>
+                <td colspan="2" bgcolor="lightgray" align="center">
+                    <table width="100%" border="0">
+                        <tr>
+                            <td align="right" width="50%">
+                                <a href="#tentang" target="">
+                                    <button style="cursor: pointer; background-color: orange; border-radius: 20% font-weight: bold;">
+                                        Kembali ke Atas
+                                    </button>
+                                </a>
+                            </td>
+                            <td align="left" width="50%">
+                                <a href="Galeri.html#atas" target="_blank">
+                                    <button style="cursor: pointer; background-color: orange; border-radius: 20% font-weight: bold;">
+                                        Next ke Galeri
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <br>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr><!-- akhir baris konten -->
+
+  <!-- BARIS 4: FOOTER -->
+   <tr>
+    <td colspan="2" bgcolor="black" align="center">
+      <table width="100%" border="2">
+        <tr>
+          <td align="center" width="50%">
+            <font color="#FFD700" face="Georgia" size="2">
+              &copy; 2026 Azzy Gm Blog | UTS | Perancangan Web
+              <br>
+              Dibuat oleh: Azzami Kurnia Aribah (24411003)
+            </font>
+          </td>
+          <td align="center" width="50%">
+            <a href="#tentang" style="color:#FFE4B5; text-decoration:none;">
+              Home</a> &nbsp;·&nbsp;
+            <a href="Galeri.html" target="_blank" style="color:#FFE4B5; text-decoration:none;">
+              Galeri</a> &nbsp;·&nbsp;
+            <a href="Hobi.html" target="_blank" style="color:#FFE4B5; text-decoration:none;">
+              Hobi</a>
+          </td>
+        </tr>
+      </table>
+
+</table><!-- akhir tabel layout utama -->
+
+</body>
+</html>
